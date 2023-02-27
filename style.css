@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat';
+}
+
+body {
+    margin-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    background-color: #f2ebe3;
+}
+.card {
+    display: flex;
+    height: 450px;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.image {
+    flex-basis: 50%;
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+}
+
+.content {
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+.header {
+    letter-spacing: 3px;
+    font-size: 0.8rem;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.text h1 {
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    line-height: 30px;
+    padding-bottom: 20px;
+}
+
+.text p{
+    padding-bottom: 20px;
+    line-height: 25px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.currentPrice h1 {
+    font-family: 'Fraunces';
+}
+
+.currentPrice {
+    color: green;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.originalPrice {
+    padding-bottom: 20px;
+}
+
+.btn {
+    width: 100%;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.cart {
+    padding-right: 10px;
+}
+
+.buyButton :hover {
+    background-color: #1c232b;
+    cursor: pointer;
+}
+
+@media (max-width: 576px) {
+
+    body {
+        margin-top: 20px;
+    }
+    .card {
+        height: 650px;
+        width: 350px;
+        flex-direction: column;
+    }
+    
+    .image {
+        flex-basis: 40%;
+        background-image: url('./images/image-product-mobile.jpg');
+    }
+
+    .content {
+        flex-basis: 60%;
+    }
+}
